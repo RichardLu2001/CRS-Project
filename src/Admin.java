@@ -3,10 +3,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 // Each Admin object, or administrator, has variables username, password,first name and last name
-// Each admin holds a temporary ArrayList of Student that he can register without them attending a specific course
-// so he can add them to any courses' student list at any time
+// Each admin holds a temporary ArrayList of Student that he can register without them attending a specific course,
+// so he can add them to any course's student list at any time
 // Admin class inherits the User class and uses the super constructor in its own constructor, it also implements an interface called Admins
-// Admin class can view courses, view rosters, sort courses,register students, check individual student's courses
+// Admin class can view courses, view rosters, sort courses, edit courses, register students, and check individual student's courses
 public class Admin extends User implements Admins {
 
     private ArrayList<Student> full_roster;
