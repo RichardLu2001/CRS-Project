@@ -5,11 +5,11 @@ import java.util.ArrayList;
 // This is the interface that students and admin will use to interact with the CRS
 // The first time it is used it will read from a csv file to gain information about the courses,
 // then it will delete the csv file
-// students and admins have different client-side but the login process is the same, and they both have a menu 
+// Students and Admins have different client-side but the login process is the same, and they both have a menu 
 // with numbers they can enter to carry out the actions they desire
-// they can view information or make changes to the data by entering the values of parameters
-// when they log out all changes will be recorded in a serialized (.ser) file
-// next time they use the CRS, the serialized file will be read instead of the csv file to provide the original data to work on 
+// They can view information or make changes to the data by entering the values of parameters
+// When they log out all changes will be recorded in a serialized (.ser) file
+// The next time they use the CRS, the serialized file will be read instead of the csv file to provide the original data to work on 
 public class CRS {
     public static void main(String[] args) throws Exception {
         String user_name;
