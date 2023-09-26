@@ -35,8 +35,8 @@ public class CRS {
             File target = new File("MyUniversityCourses.csv");
             target.delete();
         }
-        //if the csv file does not exist then it has already be used and deleted, so this is not the first
-        //time the CRS system is used and we need to read the ser. file instead
+        //if the csv file does not exist then it has already been used and deleted, which means this is not the first
+        //time the CRS system is used and we need to read the ser. file instead through deserialization
         catch(FileNotFoundException ex) {
             ArrayList<Course> dc = null;
             try {
@@ -61,7 +61,7 @@ public class CRS {
             System.out.println("Please enter your password: ");
             pass_word = reader.readLine();
             s_user = new Student(user_name,pass_word,"f","l",2024);
-            //the while loop makes sure the user can keep using the system after each action before logging out
+            //the while loop makes sure the user can keep returning to the menu after each completed action before logging out
             while (true) {
                 System.out.println("Please enter the serial number of the action you want (don't include the dot.)");
                 System.out.println("1. View all courses 2. View all courses that are not Full 3. Register on a course");
